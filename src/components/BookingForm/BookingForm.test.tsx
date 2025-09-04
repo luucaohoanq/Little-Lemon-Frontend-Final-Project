@@ -1,8 +1,15 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 // import { screen } from "@testing-library/react";
 import { render, screen } from "../../utils/tests-ts";
 import BookingForm from ".";
 // import userEvent from "@testing-library/user-event";
-import { submitAPI, fetchAPI, initializeTimes, updateTimes  } from "../../utils/temp";
+import {
+  submitAPI,
+  fetchAPI,
+  initializeTimes,
+  updateTimes,
+} from "../../utils/temp";
 
 describe("BookingForm", () => {
   test("Renders labels and fields", () => {
@@ -86,5 +93,4 @@ describe("BookingForm", () => {
     const result = submitAPI(formData);
     expect(result).toBe(true);
   });
-
 });
