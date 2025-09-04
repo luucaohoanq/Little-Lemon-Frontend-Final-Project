@@ -8,11 +8,11 @@ import Routes from "./routes";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter basename="/little-lemon">
+    <BrowserRouter>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Routes />
       </ThemeProvider>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
